@@ -16,6 +16,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/query-editor",
+    name: "QueryEditor",
+    component: () =>
+      import(/* webpackChunkName: "query-editor" */ "../views/QueryEditor.vue"),
+  },
 ];
 
 const router = createRouter({
